@@ -5,10 +5,10 @@ var gulp = require('gulp'),
 gulp.task('build-css', function() {
 	gulp.src('scss/app.scss')
 	.pipe(sass({ includePaths : ['bower_components/foundation/scss'], outputStyle: 'compressed'}).on('error', sass.logError))
-	.pipe(gulp.dest('stylesheets'));
+	.pipe(gulp.dest('css'));
 });
 
 
-gulp.task('watch', function() {
+gulp.task('default', function() {
 	gulp.watch('scss/*.scss', ['build-css']);
 })
