@@ -9,5 +9,5 @@ Install dependecies with:
 npm install & bower install
 
 Watch SASS changes with:
-gulp watch
+gulp
 
